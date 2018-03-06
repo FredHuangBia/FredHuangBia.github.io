@@ -1,46 +1,176 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-		<title>Game</title>
-		<style>
-			body {
-				background-color: black;
-			}
-			#gameCanvas {
-				background-color: black;
-				width: 640px;
-				height: 360px;
-				margin: auto;
-				align: center;
-			}
-			#scoreboard {
-				text-align: center;
-				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
-				color: white;
-			}
-			#scores {
-				font-size:600%; 
-				padding:0; 
-				margin:0;
-				color: white;
-			}
-			#title {
-				background-color: white;
-				color: black;
-			}
-		</style>
+	<head>
+		<title>Astral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onload='setup();'>
-		<div id='gameCanvas'></div>
-		<script src='./Scripts/three.min.js'></script>
-		<script src='./Scripts/keyboard.js'></script>
-		<script src='./Scripts/game.js'></script>
-		<div id='scoreboard'>
-			<h1 id='scores'>0-0</h1>
-			<h1 id='title'>3D PONG</h1>
-			<h2 id='winnerBoard'>First to 7 wins!</h2>
-			<h3>A - move left
-			<br>D - move right</h3>
-		</div>
+	<body>
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="icon fa-home active"><span>Me</span></a>
+						<a href="#photography" class="icon fa-photo"><span>Photography</span></a>
+						<a href="#research" class="icon fa-book"><span>Research</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Zhengjia Huang</h1>
+									<p>EECS Student 
+										<br> 
+										Photographer </p>
+								</header>
+								<a href="#photography" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my photos</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Photograph -->
+							<article id="photography" class="panel">
+								<header>
+									<h2>My photos</h2>
+								</header>
+								<p>
+									I love photography. Here are some selected works of mine.
+								</p>
+								<section>
+									<div class="row">
+
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic01.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic02.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic03.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic04.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic05.jpeg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic06.jpeg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic07.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic08.jpeg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic09.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic10.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic11.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic12.jpeg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic13.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic14.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic15.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic16.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic17.jpeg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic18.jpg" alt=""></a>
+										</div>
+											<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic19.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic20.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/photography/pic21.jpg" alt=""></a>
+										</div>
+
+									</div>
+								</section>
+							</article>
+
+						<!-- Research -->
+							<article id="research" class="panel">
+								<header>
+									<h2>Publication</h2>
+								</header>
+
+									<style type="text/css">a {text-decoration: none}</style>
+
+									<div class="publication">
+										<div class="paperText">
+											<a href="papers/FastSound-NIPS.pdf"> <h4> Shape and Material from Sound </h4> </a>
+											<a> Zhoutong Zhang, Qiujia Li, Zhengjia Huang, Jiajun Wu, Joshua B. Tenenbaum, and William T. Freeman </a>
+
+										</div>
+									</div>
+
+									<div class="publication">
+										<a href="papers/Sound-ICCV.pdf"> <h4> Generative Modeling of Audible Shapes for Object Perception </h4> </a>
+										<a> Zhoutong Zhang*, Jiajun Wu*, Qiujia Li, Zhengjia Huang, James Traer, Josh H. McDermott, Joshua B. Tenenbaum, and William T. Freeman </a>
+									</div>
+								
+
+							</article>
+
+							<article id="contact" class="panel">
+								<header>
+									<h2>My contact</h2>
+								</header>
+								<p> Email: huangzhj@shanghaitech.edu.cn </p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<!-- <li>&copy; Untitled.</li> --><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>
