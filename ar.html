@@ -9,8 +9,11 @@
     </a-assets>
     <a-marker preset='hiro'>
       <!--Adding a glTF 2.0 model to your scene-->
-      <a-entity gltf-model="#mymodel">
+    <a-entity scale="0.1 0.1 0.1">
+      <a-entity mmd='outline: true' afterglow:2.0;>
+        <a-entity scale="0.1 0.1 0.1" gltf-model="#mymodel"></a-entity>
       </a-entity>
+    </a-entity>
       
     </a-marker>
 
