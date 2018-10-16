@@ -5,12 +5,12 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
     <a-assets>
-      <a-asset-item id="mymodel" src="./DogPetFortnite.obj"></a-asset-item>
+      <a-asset-item id="mymodel" src="./Duck/glTF/Duck.gltf"></a-asset-item>
     </a-assets>
     <a-marker preset='hiro'>
     <a-entity scale="1.0 1.0 1.0">
       <a-entity mmd='outline: true' afterglow:2.0;>
-        <a-entity scale="1.0 1.0 1.0" obj-model="#mymodel"></a-entity>
+        <a-entity scale="1.0 1.0 1.0" gltf-model="#mymodel"></a-entity>
       </a-entity>
     </a-entity>
       
